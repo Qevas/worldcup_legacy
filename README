@@ -1,0 +1,33 @@
+[[ WORLD CUP LEGACY HUB ]]
+
+The World Cup Legacy Hub is a dynamic web application designed as a digital archive for the FIFA World Cup's rich history. This project serves as a portfolio piece showcasing a full-stack development workflow, from database design to front-end implementation, with a strong emphasis on clean code, security, and modern backend architecture.
+
+Users can explore different World Cup tournaments, view multimedia posts (images and videos) submitted by the community, and interact through likes and comments. Registered users can contribute their own content, which undergoes an admin approval process to ensure quality and relevance.
+
+[]Key Features
+
+-> Interactive Tournament Browser: A visual interface to explore World Cups, with filtering by host country, year, and popularity (likes/comments).
+
+-> User Authentication & Profiles: Secure registration and login system. Users have personal profiles to manage their data and track their contributions and interactions.
+
+->Community-Driven Content: Registered users can create and submit posts featuring images or videos related to specific World Cup events.
+
+-> Admin Dashboard & Content Curation: An administrative role with privileges to manage site structure (e.g., create tournament pages) and, most importantly, review and approve user-submitted posts.
+
+-> Dynamic Interactions: Users can engage with content by leaving comments and giving "likes".
+
+-> Advanced Search: Robust search functionality to find posts by category, year, host country, or user.
+
+[]Technical Stack & Architecture
+
+This project was built from the ground up, adhering to strict academic and professional standards.
+
+-> Front-End: Hand-crafted with vanilla HTML5, CSS3, and JavaScript (ES6+). The user interface is fully responsive and features dynamic content updates using AJAX for a seamless user experience.
+
+-> Back-End: Developed in PHP 8+, following a strict Object-Oriented Programming (OOP) methodology and a custom-built Model-View-Controller (MVC) architectural pattern.
+
+-> Database: MySQL, with a normalized relational schema (3NF). All data manipulation is handled exclusively through Stored Procedures to maximize security and encapsulate business logic within the database.
+
+-> APIs: Includes the implementation of a custom-built internal API and the integration of a third-party API.
+
+-> Security: Implements best practices for data validation, password hashing, and prevention of common vulnerabilities like SQL injection and XSS.
