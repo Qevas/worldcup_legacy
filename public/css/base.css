@@ -1,21 +1,48 @@
+@font-face{
+    font-family: 'FIFA Bold';
+    src:url(../fonts/FIFA.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'FIFA Welcome';
+    src: url(../fonts/FIFA-Welcome.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root{
     --green-2026: #3CAC3B;
     --blue-2026: #2A398D;
     --red-2026: #E61D25;
     --light-gray-2026: #D1D4D1;
-    --dark-gray-2026: #474A4A;
+    --dark-gray-2026: #474A4A;    
+    --font-title:'FIFA Bold', sans-serif;
+    --font-subtitle: 'FIFA Welcome', sans-serif;
+    --font-primary: 'Roboto', sans-serif;
+
 }
 
 body{
     background-color: black;
     color: white;
-    font-family: sans-serif;
+    font-family: var(--font-primary);
     margin: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-    url('../assets/backgrounds/main-background.jpg');
+    url('../assets/backgrounds/main-backgroundNF.png');
     background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+h1, h2 {
+    font-family: var(--font-title);
+}
+
+h3, h4, h5, h6 {
+    font-family: var(--font-subtitle);
 }
 
 ::-webkit-scrollbar {
