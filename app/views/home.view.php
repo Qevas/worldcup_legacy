@@ -1,40 +1,34 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Cup Legacy Hub - Inicio</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+<?php require_once 'partials/header.partial.php'; ?>
 
-    <header>
-        <!-- Barra de Navegación -->
-        <h1>World Cup Legacy Hub</h1>
-        <nav>
-            <a href="index.php">Inicio</a>
-            <a href="login.php">Iniciar Sesión</a>
-            <a href="register.php">Registrarse</a>
-        </nav>
-    </header>
+    <section id="section-one" class="fullscreen-section">
+     
+    </section>
 
-    <main>
-        <!-- Contenido Principal -->
-        <section class="filters">
-            <h2>Filtros</h2>
-            <p>Aquí irán los botones para filtrar por año, país, etc.</p>
-        </section>
+    <section id="section-two" class="fullscreen-section">
+    <div class="worldcup-cards-container">
+        <div class="card-wrapper">
+            <p class="card-year-vertical">1930</p>
+            <div class="worldcup-card">
+                <img class="card-image-background" src="assets/Uruguay/Photo.jpg" alt="ImageWinners1930">
+                <img class="card-image-front" src="assets/Uruguay/Uruguay_1930.jpeg" alt="Worldcup1930">
+                <div class="card-flag-tag">
+                    <img src="assets/Uruguay/Flag.webp" alt="Winner flag">
+                </div>
+                <div class="card-corner-flag">
+                    <img src="assets/Uruguay/Flag.webp" alt="Host flag">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
 
-        <section class="worldcup-grid">
-            <h2>Mundiales</h2>
-            <p>Aquí se mostrarán las tarjetas de cada mundial.</p>
-        </section>
-    </main>
+    <section id="section-three" class="fullscreen-section">
+        <h2>Noticias</h2>
+    </section>
 
-    <footer>
-        <!-- Pie de Página -->
-        <p>&copy; 2024 World Cup Legacy Hub. Todos los derechos reservados.</p>
-    </footer>
+        <section id="section-four" class="fullscreen-section">
+        <h2>Redes sociales</h2>
+    </section>
 
-</body>
-</html>
+
+<?php require_once 'partials/footer.partial.php'; ?>

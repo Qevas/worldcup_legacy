@@ -1,1 +1,1 @@
-<?php require '../app/views/home.view.php';
+<?php require_once '../app/views/home.view.php';

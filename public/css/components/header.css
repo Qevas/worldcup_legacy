@@ -1,0 +1,33 @@
+.main-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--light-gray-2026);
+    transition: all 0.3s ease-in-out;
+}
+
+.search-bar input:focus{
+    outline: none;
+    border-color: var(--green-2026);
+    background-color: rgba(0,0,0,0.5);
+}
+
+.search-bar input::placeholder{
+    color: rgba(209,212,209,0.5);
+}
+
+.user-profile a {
+    margin-left: 20px;
+    color: var(--light-gray-2026);
+    text-decoration: none;
+    font-weight: bold;
+}

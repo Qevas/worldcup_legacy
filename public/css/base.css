@@ -1,0 +1,23 @@
+:root{
+    --green-2026: #3CAC3B;
+    --blue-2026: #2A398D;
+    --red-2026: #E61D25;
+    --light-gray-2026: #D1D4D1;
+    --dark-gray-2026: #474A4A;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url('../assets/backgrounds/main-background.jpg');
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

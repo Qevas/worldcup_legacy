@@ -1,0 +1,21 @@
+.fullscreen-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 20px;
+    box-sizing: border-box;
+}
+
+#section-one{
+    min-height: 120vh;
+}
+
+#section-two{
+    min-height: 150vh;
+}
+
+#section-three{
+    min-height: 115vh;
+}
