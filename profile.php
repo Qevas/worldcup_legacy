@@ -1,0 +1,1 @@
+<?php require 'app/views/profile.view.php'; ?>

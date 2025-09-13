@@ -1,12 +1,63 @@
 .main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-logo a {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.header-logo img{
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 20px 10px 15px 10px;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.main-menu a {
+    color: var(--light-gray-2026);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.main-menu a:hover {
+    color: white;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .search-bar input {
-    width: 300px;
+    width: 250px;
     padding: 8px 12px;
     border-radius: 20px;
     border: 1px solid #ffffff;
@@ -15,19 +66,52 @@
     transition: all 0.3s ease-in-out;
 }
 
-.search-bar input:focus{
-    outline: none;
-    border-color: var(--green-2026);
-    background-color: rgba(0,0,0,0.5);
+.auth-links {
+    display: flex;
+    gap: 10px;
 }
 
-.search-bar input::placeholder{
-    color: rgba(209,212,209,0.5);
-}
-
-.user-profile a {
-    margin-left: 20px;
-    color: var(--light-gray-2026);
+.btn {
+    padding: 10px 10px;
+    border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-primary {
+    background-color: var(--green-2026);
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #52d951;
+}
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.btn-secondary:hover {
+    background-color: white;
+    color: #111;
+}
+
+.btn-icon {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-icon img {
+    height: 100%;
+    width: auto;
+}
+
+.auth-links .btn:not(.btn-icon) {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    font-size: 1rem;
 }

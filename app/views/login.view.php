@@ -1,36 +1,42 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión - World Cup Legacy Hub</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+<link rel="stylesheet" href="public/css/components/forms.css">
+<link rel="stylesheet" href="public/css/base.css">
+<link rel="stylesheet" href="public/css/components/footer.css">
 
-    <header>
-        <h1><a href="index.php">World Cup Legacy Hub</a></h1>
-    </header>
+<div class="register-layout">
+  
+  <div class="promo-panel">
+    <div class="promo-logo">
+      <a href="index.php">WC 2026</a>
+    </div>
+    <div class="promo-content">
+      <h2>Bienvenido de vuelta.</h2>
+      <p>Ingresa para acceder a tu perfil, participar en juegos y seguir de cerca toda la acción del Mundial 2026.</p>
+    </div>
+  </div>
 
-    <main>
-        <h2>Iniciar Sesión</h2>
-        <form action="" method="POST">
-            <div>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email">
-            </div>
-            <div>
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password">
-            </div>
-            <button type="submit">Entrar</button>
-        </form>
-        <p>¿No tienes una cuenta? <a href="register.php">Regístrate aquí</a>.</p>
-    </main>
+  <div class="auth-container">
+    <h1>Iniciar Sesión</h1>
+    <p class="auth-subtitle">Ingresa tu correo y contraseña.</p>
 
-    <footer>
-        <p>&copy; 2024 World Cup Legacy Hub.</p>
-    </footer>
+    <form id="login-form" class="auth-form" novalidate>
+      <div class="form-group">
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" required>
+      </div>
 
-</body>
-</html>
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <button type="button" id="login-btn" class="btn-submit">Ingresar</button>
+    </form>
+
+    <p class="auth-switch">¿No tienes una cuenta? <a href="register.php">Regístrate aquí</a>.</p>
+  </div>
+
+</div>
+
+<script src="public/js/auth.js" defer></script>
+
+<?php include 'app/views/partials/footer.partial.php'; ?>

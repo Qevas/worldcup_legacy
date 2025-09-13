@@ -1,0 +1,233 @@
+body {
+    color: white;
+    font-family: var(--font-primary);
+    margin: 0;
+    background-image: url('../assets/backgrounds/tu-imagen-de-fondo.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #000;
+}
+
+.register-layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: stretch;
+    background: #000;
+}
+
+.promo-panel {
+    width: 50%;
+    background-image: url('../assets/backgrounds/main-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.promo-content {
+    text-align: center;
+    color: white;
+    max-width: 400px;
+}
+
+.promo-content h2 {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.promo-content p {
+    font-family: var(--font-subtitle);
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+}
+
+/* --- Estilo para el Logo en el Panel de Promoción --- */
+.promo-logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.promo-logo a {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.auth-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    background-color: white;
+    color: var(--dark-gray-2026);
+}
+
+.auth-container h1 {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.auth-container .auth-subtitle {
+    font-family: var(--font-subtitle);
+    color: var(--dark-gray-2026);
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.auth-form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    font-family: var(--font-subtitle);
+    font-size: 0.9rem;
+    color: var(--dark-gray-2026);
+    margin-bottom: 8px;
+    display: block;
+    text-align: left;
+}
+
+.auth-form input,
+.auth-form select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f0f2f5;
+    color: #000;  
+    border: 1px solid var(--light-gray-2026);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.auth-form input:focus,
+.auth-form select:focus {
+    outline: none;
+    border-color: var(--blue-2026);
+    box-shadow: 0 0 8px rgba(42, 57, 141, 0.3);
+}
+
+.btn-submit {
+    background: var(--green-2026);
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-family: var(--font-title);
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background: #2e8a2e;
+    transform: scale(1.02);
+}
+
+@media (max-width: 900px) {
+    .register-layout {
+        flex-direction: column;
+    }
+
+    .promo-panel,
+    .auth-container {
+        width: 100%;
+    }
+    
+    .promo-panel {
+        min-height: 300px;
+    }
+    
+    .auth-container{
+        padding: 40px 30px;
+    }
+}
+
+.success-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.success-modal.active {
+  display: flex;
+  opacity: 1;
+}
+
+.success-content {
+  background: #fff;
+  color: #000;
+  padding: 30px 40px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.success-content h3 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+
+.success-content p {
+  font-family: var(--font-subtitle);
+  color: var(--dark-gray-2026);
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.success-content .btn-submit {
+  margin-top: 0;
+}
+
+/* --- Estilo para el enlace de cambio entre Login/Registro --- */
+.auth-switch {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9rem;
+}
+
+.auth-switch a {
+    color: var(--blue-2026);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
